@@ -1,7 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
-import { getAuth } from "firebase/auth"; // 👈 Importamos Auth
+import { getAuth } from "firebase/auth"; 
 import { 
   API_KEY, 
   AUTH_DOMAIN, 

@@ -64,7 +64,6 @@ const Home = ({ navigation }) => {
     return () => unsubscribe();
   }, []);
 
-  const goToAdd = () => navigation.navigate('Add');
   const goToEdit = () => navigation.navigate('EditProfile');
 
   const onLogout = async () => {
@@ -124,11 +123,6 @@ const Home = ({ navigation }) => {
           </View>
         }
       />
-
-      {/* FAB Agregar */}
-      <TouchableOpacity style={styles.fab} onPress={goToAdd} activeOpacity={0.9}>
-        <Text style={styles.fabText}>＋</Text>
-      </TouchableOpacity>
     </SafeAreaView>
   );
 };
@@ -198,7 +192,7 @@ const styles = StyleSheet.create({
   // Lista y vacío
   listContent: {
     paddingHorizontal: 12,
-    paddingBottom: 100, // espacio para el FAB
+    paddingBottom: 100, // espacio para el FAB (aunque ya no está)
   },
   emptyBox: {
     backgroundColor: '#FFFFFF',
@@ -226,7 +220,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
   },
 
-  // FAB
+  // FAB (eliminado)
   fab: {
     position: 'absolute',
     right: 20,
@@ -237,7 +231,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#0288d1',
     alignItems: 'center',
     justifyContent: 'center',
-    // sombra
     shadowColor: '#0288d1',
     shadowOffset: { width: 0, height: 8 },
     shadowOpacity: 0.25,
